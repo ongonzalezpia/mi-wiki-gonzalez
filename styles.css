@@ -37,13 +37,16 @@ img {
   padding: 0 16px;
 }
 
+/* Header general de la web (sin fondo blanco puro según corrección) */
 header {
   grid-area: cabecera;
-  background-color: #ffffff;
   padding: 16px 24px;
-  border: 1px solid #a2a9b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Solo el índice (aside) y el artículo (main) llevan fondo blanco */
 aside {
   grid-area: indice;
   background-color: #ffffff;
@@ -58,29 +61,18 @@ main {
   border: 1px solid #a2a9b1;
 }
 
+/* Footer general de la web (sin fondo blanco puro según corrección) */
 footer {
   grid-area: referencias;
-  background-color: #ffffff;
   padding: 16px;
-  border: 1px solid #a2a9b1;
-}
-
-
-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .logo-wiki {
   max-height: 50px;
   width: auto;
-}
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 footer a {
@@ -92,7 +84,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 
 aside ul {
   list-style: none;
