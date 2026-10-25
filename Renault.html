@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Wiki F1 - Renault F1 Team</title>
+    <title>Wiki F1 - Renault/Alpine F1 team</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
@@ -13,13 +14,18 @@
         </header>
 
         <aside>
-            <ul>
-                <li><a href="#regreso-renault">El regreso de Renault a la F1</a></li>
-                <li><a href="#campeonatos">Las mejoras con los años y los campeonatos del 2005 y 2006</a></li>
-                <li><a href="#crashgate">Etapa post-Alonso: declive del equipo y el caso del "CrashGate"</a></li>
-                <li><a href="#alpine">Etapa Alpine: porque el cambio de nombre?</a></li>
-                <li><a href="#actualidad">Actualidad: fin de motores Renault por Mercedes</a></li>
-            </ul>
+            <!-- El índice se llenará solo con JavaScript -->
+             <ul></ul>
+
+            <!-- Panel de Apariencia -->
+            <div class="panel-apariencia">
+                <button id="btn-modo">Modo oscuro</button>
+                <div class="botones-tamanio">
+                    <button id="btn-pequeño">Pequeño</button>
+                    <button id="btn-estandar" class="activo">Estándar</button>
+                    <button id="btn-grande">Grande</button>
+                 </div>
+            </div>
         </aside>
         
         <main> 
@@ -28,6 +34,7 @@
             <p>
                 Franco Colapinto en el Road Show de BsAs 2026
             </p>
+            <section>
             <h2 id="regreso-renault">El regreso de Renault a la F1</h2>
             <p>
                 A comienzos de los años 2000, Renault regresó oficialmente a la Formula One con el objetivo de volver a competir al máximo nivel. Sin embargo, la marca francesa ya tenía una importante historia dentro de la categoría desde décadas anteriores. Durante los años 70 y 80, Renault se destacó por introducir los motores turbo en la Fórmula 1, una innovación que cambió el deporte y que luego sería utilizada por muchos otros equipos. Más adelante, en los años 90, la empresa tuvo una etapa muy exitosa como proveedora de motores, trabajando junto a equipos históricos como Williams y Benetton. Gracias a esa asociación lograron múltiples campeonatos mundiales junto a pilotos como Nigel Mansell, Alain Prost y Michael Schumacher.
@@ -35,7 +42,9 @@
             <p>
                 Cuando Renault volvió como equipo oficial en los años 2000, la Fórmula 1 estaba dominada casi por completo por Ferrari y Schumacher. Aun así, la escudería francesa comenzó a destacarse rápidamente gracias al desarrollo de autos competitivos, una gran organización técnica y la apuesta por jóvenes pilotos talentosos, entre ellos un español llamado Fernando Alonso.
             </p>
-            
+            </section>
+
+            <section>
             <h2 id="campeonatos">Las mejoras con los años y los campeonatos del 2005 y 2006</h2>
             <p>
                 La gran apuesta de Renault en esos años fue el joven piloto español Fernando Alonso, quien había debutado en la Formula Uno en 2001. Bajo la dirección del jefe de equipo italiano Flavio Briatore, Renault decidió apostar fuertemente por Alonso como el futuro líder del proyecto. En 2003 se convirtió en piloto titular junto al experimentado piloto italiano Jarno Trulli y rápidamente comenzó a demostrar su talento. Ese mismo año consiguió su primera victoria en el Gran Premio de Hungría, convirtiéndose en ese momento en el piloto más joven en ganar una carrera de Fórmula 1. Gracias a su velocidad, agresividad y madurez al volante, Alonso empezó a ser considerado una de las futuras estrellas de la categoría.
@@ -54,7 +63,9 @@
             <p>
                 Fernando Alonso, Flavio Briatore y Giancarlo Fisichella durante la epoca en Renault
             </p>
+            </section>
 
+            <section>
             <h2 id="crashgate">Etapa post-Alonso: declive del equipo y el caso del "CrashGate"</h2>
             <p>
                 Tras la salida de Fernando Alonso hacia McLaren en 2007, Renault comenzó a perder el nivel dominante que había mostrado en las temporadas anteriores. Aunque el equipo seguía siendo competitivo, ya no contaba con la misma regularidad ni con un auto capaz de luchar constantemente por campeonatos. Durante 2007 y gran parte de 2008 Renault quedó detrás de Ferrari y McLaren en rendimiento, mientras intentaba reorganizarse tras la pérdida de su principal piloto y varias figuras importantes del equipo técnico.
@@ -94,7 +105,9 @@
             
             <img src="img/ramarillo.jpg" width="350" height="200" alt="Hulkemberg y Sainz">
             <p>Nico Hulkemberg y Carlos Sainz en Renault</p>
+            </section>
 
+            <section>
             <h2 id="alpine">Etapa Alpine: porque el cambio de nombre?, hubieron mejoras con respecto a los años anteriores?</h2>
             <p>
                 En 2021, Renault decidió cambiar oficialmente el nombre de su escudería a Alpine. La razón principal fue promocionar la marca deportiva Alpine, una división de autos de alto rendimiento perteneciente al grupo Renault. Con este cambio, la empresa buscaba darle una identidad más moderna y deportiva al proyecto dentro de la Formula Uno, aunque técnicamente el equipo seguía siendo la continuación directa de Renault. Además del nuevo nombre, también presentaron una nueva decoración azul inspirada en los colores históricos de Francia en el automovilismo.
@@ -118,7 +131,8 @@
             
             <img src="img/hungria.jpg" width="350" height="200" alt="Victoria de Ocon">
             <p>Victoria de Esteban Ocon en Hungria 2021</p>
-
+            </section>
+            <section>
             <h2 id="actualidad">Actualidad: fin de motores Renault por Mercedes, reglamento nuevo 2026 y pilotos nuevos *🇦🇷*</h2>
             <p>
                 La temporada 2025 comenzó como otro año complicado para Alpine. Luego de varios cambios internos y malos resultados en temporadas anteriores, la escudería atravesaba una fuerte crisis deportiva y organizativa. Uno de los regresos más llamativos fue el de Flavio Briatore, histórico jefe del equipo durante la época de los campeonatos de Fernando Alonso. Tras años alejado de la Fórmula 1 luego del escándalo del Crashgate, Briatore volvió como una de las principales figuras del proyecto deportivo de Alpine, buscando reconstruir un equipo que llevaba años lejos de los primeros puestos.
@@ -145,6 +159,20 @@
             
             <img src="img/nene.jpg" width="350" height="200" alt="Colapinto, Gasly y Briatore">
             <p>El argentino Franco Colapinto junto a su compañero Pierre Gasly y Flavio Briatore en Alpine</p>
+        </section>
+            <section id="seccion-discusion">
+                <h2>Discusión y Comentarios</h2>
+            <form id="form-comentario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="comentario">Comentario (10 a 200 caracteres):</label>
+                <textarea id="comentario" rows="3" required></textarea>
+                <div id="contador-caracteres">0/200</div>
+                <p id="aviso-error" class="error-oculto"></p>
+                <button type="submit">Enviar comentario</button>
+            </form>
+            <ul id="lista-comentarios"></ul>
+            </section>
         </main>
 
         <footer>

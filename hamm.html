@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Wiki F1 - Lewis Hamilton</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
@@ -13,13 +14,18 @@
         </header>
 
         <aside>
-            <ul>
-                <li><a href="#debut">Debut a la F1</a></li>
-                <li><a href="#mercho">Final de su era McLaren</a></li>
-                <li><a href="#plata">Era Mercedes: campeonatos y dominio absoluto desde 2014 a 2020</a></li>
-                <li><a href="#33">Temporada 2021: la lucha contra Max Verstappen y el inicio del declive del equipo Mercedes</a></li>
-                <li><a href="#ferrari">Actualidad en Ferrari</a></li>
-            </ul>
+            <!-- El índice se llenará solo con JavaScript -->
+             <ul></ul>
+
+            <!-- Panel de Apariencia -->
+            <div class="panel-apariencia">
+                <button id="btn-modo">Modo oscuro</button>
+                <div class="botones-tamanio">
+                    <button id="btn-pequeño">Pequeño</button>
+                    <button id="btn-estandar" class="activo">Estándar</button>
+                    <button id="btn-grande">Grande</button>
+                 </div>
+            </div>
         </aside>
 
         <main>
@@ -32,6 +38,7 @@
             <p>Durante sus años en karting, Hamilton consiguió numerosos campeonatos nacionales e internacionales, convirtiéndose en una de las mayores promesas del automovilismo británico. Uno de los momentos más importantes de su infancia ocurrió en 1995, cuando conoció a Ron Dennis, jefe de McLaren. El joven Hamilton le dijo que algún día quería correr para su equipo, y años después McLaren decidió incorporarlo a su programa de jóvenes pilotos, financiando gran parte de su desarrollo profesional.</p>
             <p>Tras dominar distintas categorías inferiores, Hamilton ganó la Fórmula Renault británica, la Fórmula 3 Euroseries y finalmente la GP2 Series en 2006, categoría considerada el paso previo a la Formula Uno. Sus actuaciones impresionaron a McLaren y Mercedes, quienes veían en él a un futuro campeón mundial. Gracias a esos resultados, Hamilton recibió la oportunidad de debutar en Fórmula 1 en 2007 junto a McLaren, iniciando una de las carreras más exitosas en la historia del deporte.</p>
             
+            <section>
             <h2 id="debut">Debut a la F1: Cara a cara contra Alonso y ya peleando por el titulo</h2>
             <p>El debut de Lewis Hamilton en la Formula Uno durante 2007 fue uno de los más impactantes en la historia de la categoría. Desde sus primeras carreras con McLaren mostró un nivel extremadamente alto, logrando podios consecutivos y peleando inmediatamente por el campeonato mundial. Su compañero de equipo era nada menos que Fernando Alonso, bicampeón del mundo y principal figura de McLaren en aquel momento. Lo que inicialmente parecía una dupla imparable rápidamente se transformó en una de las rivalidades internas más tensas y polémicas de la Fórmula 1 moderna.</p>
             
@@ -45,7 +52,9 @@
             
             <img src="img/felipe.jpg" width="350" height="200" alt="Massa">
             <p>Massa perdio por un punto el titulo contra Hamilton en el GP de Brasil 2008</p>
+            </section>
 
+            <section>
             <h2 id="mercho">Final de su era McLaren: Final perdida en 2010 y transición a Mercedes</h2>
             <p>Después de conseguir su primer campeonato mundial en 2008, Lewis Hamilton continuó siendo una de las principales figuras de McLaren durante los años siguientes. Aunque la temporada 2009 fue complicada debido al bajo rendimiento inicial del auto, McLaren logró recuperarse hacia el final del campeonato y Hamilton volvió a conseguir victorias importantes. En 2010, con un auto mucho más competitivo, volvió a pelear directamente por el título en una de las temporadas más igualadas de la historia reciente de la Formula Uno.</p>
             <p>Durante gran parte de 2010 Hamilton luchó por el campeonato contra pilotos como Fernando Alonso, Sebastian Vettel y Mark Webber. Gracias a varias victorias y actuaciones agresivas, llegó con posibilidades matemáticas a la última carrera en Abu Dhabi. Sin embargo, una combinación de accidentes, errores estratégicos y la enorme competitividad entre los equipos terminó alejándolo del título, que finalmente quedó en manos de Vettel. Aun así, Hamilton consolidó todavía más su reputación como uno de los pilotos más rápidos y espectaculares de la categoría.</p>
@@ -55,7 +64,9 @@
             
             <img src="img/button.jpg" width="350" height="200" alt="Button y Hamilton">
             <p>Hamilton junto a su compañero Jenson Button en el podio</p>
+            </section>
 
+            <section>
             <h2 id="plata">Las flachas plateadas: campeonatos y dominio mercedes 2014-2020</h2>
             <p>La llegada de la nueva era híbrida en 2014 marcó el comienzo del dominio absoluto de Mercedes. Gracias a un motor muy superior al de sus rivales y a un auto extremadamente competitivo, Mercedes rápidamente se convirtió en la referencia de la Formula Uno. Lewis Hamilton aprovechó perfectamente esa ventaja y logró ganar los campeonatos de 2014 y 2015 con gran autoridad. Muchos pilotos y especialistas comenzaron a considerarlo el mejor piloto de su generación, mientras la prensa británica e internacional destacaba tanto su velocidad como su capacidad para rendir bajo presión.</p>
             <p>Sin embargo, el dominio de Mercedes también dio lugar a una de las rivalidades internas más intensas de la Fórmula 1 moderna: Hamilton contra Nico Rosberg. Ambos habían sido compañeros desde jóvenes en categorías inferiores y mantenían una relación amistosa antes de luchar directamente por campeonatos mundiales. Entre 2014 y 2016 protagonizaron numerosos enfrentamientos dentro y fuera de pista, incluyendo accidentes polémicos y fuertes tensiones internas dentro del equipo. Rosberg consiguió arrebatarle el campeonato a Hamilton en 2016 tras una temporada extremadamente pareja, convirtiéndose en el único piloto capaz de derrotarlo durante la era dominante de Mercedes. Poco después de lograr el título, Rosberg sorprendió al anunciar su retiro inmediato de la Fórmula 1.</p>
@@ -70,7 +81,9 @@
             <p>Hamilton junto a su jefe de equipo Toto Wolf y su compañero Valtteri Bottas</p>
             
             <p>Entre 2019 y 2020 Mercedes continuó dominando la Fórmula 1 y Hamilton alcanzó su máximo nivel estadístico, igualando el récord de siete campeonatos mundiales de Schumacher y superando numerosas marcas históricas de victorias, poles y podios. Para muchos especialistas y medios internacionales, Hamilton ya se había convertido en uno de los mejores pilotos de todos los tiempos. Más adelante, desde 2022, Mercedes incorporó al joven George Russell como nuevo compañero de equipo. Russell representaba la nueva generación de pilotos británicos y rápidamente comenzó a desafiar el liderazgo interno de Hamilton, especialmente durante las temporadas más difíciles del equipo tras el final del dominio absoluto de Mercedes.</p>
+            </section>
 
+            <section>
             <h2 id="33">Temporada 2021: la lucha contra Max Verstappen y el inicio del declive del equipo Mercedes</h2>
             <p>La temporada 2021 fue una de las más intensas y polémicas en la historia reciente de la Formula Uno. Después de años de dominio absoluto de Mercedes, apareció finalmente un rival capaz de enfrentarse directamente a Lewis Hamilton: Max Verstappen y Red Bull Racing. Desde el inicio del campeonato ambos pilotos protagonizaron una rivalidad extremadamente agresiva, con choques, sanciones y múltiples polémicas dentro y fuera de la pista. La pelea entre Mercedes y Red Bull también involucró fuertes cruces mediáticos entre directivos como Toto Wolff y Christian Horner, aumentando todavía más la tensión de la temporada.</p>
             <p>Hamilton logró mantenerse en la pelea gracias a su experiencia y regularidad, mientras Verstappen dominaba varias carreras gracias al gran rendimiento del Red Bull. Ambos llegaron empatados en puntos a la última carrera en Abu Dhabi, donde ocurrió uno de los finales más controversiales de la historia de la Fórmula 1. Durante gran parte del Gran Premio, Hamilton lideró cómodamente y parecía encaminado hacia su octavo campeonato mundial. Sin embargo, un safety car provocado en las vueltas finales cambió completamente la situación. La dirección de carrera, encabezada por Michael Masi, tomó decisiones muy discutidas sobre el procedimiento del safety car, permitiendo que Verstappen atacara a Hamilton en la última vuelta con neumáticos nuevos. Finalmente, Verstappen superó al británico y ganó el campeonato. La decisión generó enormes críticas hacia la FIA y provocó debates que continúan hasta la actualidad. Muchos aficionados, periodistas y figuras del automovilismo consideraron que Hamilton había sido perjudicado por una aplicación irregular del reglamento.</p>
@@ -85,7 +98,9 @@
             <p>Hamilton junto a su compañero George Russell</p>
             
             <p>Durante 2023 y 2024 Mercedes continuó atravesando una etapa irregular. Aunque Hamilton consiguió algunos podios y mantuvo actuaciones destacadas, el equipo ya no podía luchar constantemente por victorias como en años anteriores. Red Bull dominaba ampliamente la categoría con Verstappen, mientras McLaren y Ferrari también mostraban un crecimiento importante. La prensa comenzó a especular cada vez más sobre el futuro de Hamilton y sobre la posibilidad de buscar un nuevo desafío antes de retirarse. Finalmente, a comienzos de 2024 se anunció una de las noticias más impactantes de la Fórmula 1 moderna: Hamilton dejaría Mercedes al finalizar la temporada para incorporarse a Ferrari en 2025, cerrando así una etapa histórica junto al equipo con el que había conquistado seis de sus siete campeonatos mundiales.</p>
+            </section>
 
+            <section>
             <h2 id="ferrari">Actualidad: fichaje por Ferrari y nuevo reglamento</h2>
             <p>A comienzos de 2024 se anunció oficialmente uno de los fichajes más importantes y sorprendentes de la historia moderna de la Formula Uno: Lewis Hamilton dejaría Mercedes al finalizar la temporada para incorporarse a Ferrari en 2025. La noticia impactó enormemente tanto a los aficionados como a la prensa internacional, ya que Hamilton había pasado más de una década ligado al proyecto de Mercedes y era considerado la imagen principal de la marca dentro de la Fórmula 1. Además, Ferrari representaba el equipo más histórico y emblemático de la categoría, por lo que muchos compararon el movimiento con los grandes fichajes históricos del deporte.</p>
             <p>La llegada de Hamilton también significó la salida de Carlos Sainz Jr., quien dejó Ferrari después de varias temporadas competitivas junto a Charles Leclerc. Desde el primer momento, la prensa comenzó a debatir si Hamilton todavía tenía el nivel necesario para luchar por un campeonato o si Ferrari estaba apostando más por su experiencia y valor mediático. Sin embargo, muchos pilotos y especialistas defendieron la decisión, destacando que incluso en temporadas difíciles Hamilton seguía mostrando un gran ritmo en carrera y una enorme capacidad para desarrollar autos competitivos.</p>
@@ -94,6 +109,23 @@
             
             <img src="img/rojo.jpg" width="350" height="200" alt="Hamilton en Ferrari">
             <p>Hamilton en el equipo Ferrari</p>
+            </section>
+
+            </section>
+            
+            <section id="seccion-discusion">
+                <h2>Discusión y Comentarios</h2>
+            <form id="form-comentario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="comentario">Comentario (10 a 200 caracteres):</label>
+                <textarea id="comentario" rows="3" required></textarea>
+                <div id="contador-caracteres">0/200</div>
+                <p id="aviso-error" class="error-oculto"></p>
+                <button type="submit">Enviar comentario</button>
+            </form>
+            <ul id="lista-comentarios"></ul>
+            </section>
         </main>
 
         <footer>
